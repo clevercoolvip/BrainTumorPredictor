@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tumor Predictor</title>
+</head>
+<body>
+    <h1>Brain Tumor Predictor</h1>
+    <br>
+    <div>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="image_">Select Image: </label>
+                <input type="file" name="file" id="image_"/>
+            <input type="submit" value="Predict"/>
+            <div>
+                <img src={{imageSrc}}>
+                <h2>Prediction : {{data}}</h2>
+                <h2>Confidence : {{conf}}</h2>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
